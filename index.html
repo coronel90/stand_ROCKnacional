@@ -53,7 +53,6 @@
           linear-gradient(to bottom, #172b45 0%, #485b67 37%, #9a7652 59%, #315534 60%, #183b27 100%);
       }
 
-      /* Stage lights and distant festival silhouettes */
       .festival-scene::before {
         content: "";
         position: absolute;
@@ -117,6 +116,9 @@
             ar-modes="webxr scene-viewer quick-look"
             camera-controls
             auto-rotate
+            camera-orbit="0deg 75deg 65%"
+            min-camera-orbit="auto auto 10%"
+            max-camera-orbit="auto auto 150%"
             shadow-intensity="1"
             exposure="1"
             tone-mapping="commerce"
